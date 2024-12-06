@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
+</head>
+<body>
+    <h1>Project Management Bot</h1>
+    <p align="center">
+        {% if not authorized %}
+            <a href="/login"><button>Login with Discord!</button></a>
+        {% else %}
+            <a href="/dashboard"><button>Open Dashboard</button></a>
+        {%endif %}
+    </p>
+</body>
+</html>
